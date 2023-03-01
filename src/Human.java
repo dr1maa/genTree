@@ -6,24 +6,21 @@ public class Human {
     private Human mom;
     private Human dad;
 
-    private List<Human> child;
+    private List<Human> children;
     private Gender gender;
 
     public Human(String name, Gender gender) {
         this.name = name;
         this.gender = gender;
-        this.child = new ArrayList<>();
-    }
-    public void addChild(Human child){
-     this.child.add(child);
+        this.children = new ArrayList<>();
     }
 
-    public List<Human> getChild() {
-        return child;
+    public List<Human> getChildren() {
+        return children;
     }
 
-    public void setChild(List<Human> child) {
-        this.child = child;
+    public void setChildren(List<Human> children) {
+        this.children = children;
     }
 
     public String getName() {
