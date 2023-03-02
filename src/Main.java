@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class Main {
@@ -16,6 +17,7 @@ public class Main {
         } else if (numberStr.equals("2")) {
             tree = save.readFile();
         }
+
         System.out.println("Введите имя  Sveta , Anatoliy, Lena, Enakentiy, Anastasia, Aleksandr, Alexey");
         String name = scanner.nextLine();
         Human result = tree.findPeople(name);
