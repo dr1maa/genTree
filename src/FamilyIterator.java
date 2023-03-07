@@ -14,7 +14,7 @@ public class FamilyIterator<T> implements Iterator<T> {
 
     @Override
     public boolean hasNext() {
-        return index < familyList.size();
+        return index < familyList.size()-1;
     }
 
     @Override
