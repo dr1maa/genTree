@@ -1,7 +1,7 @@
 import java.io.Serializable;
 import java.util.Iterator;
 
-public class TreeImple implements Tree, Serializable, FamilyIterator {
+public class TreeImple implements Tree, Serializable, Iterable {
     private NewTreeParam<Human> humanTree;
 
     public TreeImple(String name, Gender gender) {
