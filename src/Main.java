@@ -1,39 +1,70 @@
 import java.io.IOException;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("хотите создать файл ? введите 1");
-        System.out.println("хотите прочитать из файла ? введите 2");
+    private static Tree tree = null;
 
-        String numberStr = scanner.nextLine();
+    public static void main(String[] args) {
+        //1) принт меню обернуть в цикл while
+        //2) при выборе 3го пункта, когда дерево не созданно или не загружено - выводить сообщение об этом,
+        // вместо ошибки NullPointerExcaption
+        //3) сделать выход из программы
+        // почитать про паттерн команду
         FileManager save = new FileManager();
-        Tree tree = null;
-        if (numberStr.equals("1")) {
-            tree = initTre();
-            save.writeFile(tree);
-        } else if (numberStr.equals("2")) {
-            tree = save.readFile();
-        }
+        ConsoleUi menu = new ConsoleUi();
+        menu.printMenu(createLoadCommand(save),createReadCommand(save),createPrintChildrenCommand());
 
-        System.out.println("Введите имя  Sveta , Anatoliy, Lena, Enakentiy, Anastasia, Aleksandr, Alexey");
-        String name = scanner.nextLine();
-        Human result = tree.findPeople(name);
-        System.out.println("Все дети " + result + " : ");
-        for (Human hum : result.getChildren()) {
-            System.out.println(hum.getName());
-        }
     }
 
     private static Tree initTre() {
         Tree tree = new TreeImple("Alexey", Gender.MAN);
-        tree.addParants("Alexey", "Sveta", "Anatoliy");
-        tree.addParants("Sveta", "Lena", "Enakentiy");
-        tree.addParants("Anatoliy", "Anastasia", "Aleksandr");
+        tree.addParents("Alexey", "Sveta", "Anatoliy");
+        tree.addParents("Sveta", "Lena", "Enakentiy");
+        tree.addParents("Anatoliy", "Anastasia", "Aleksandr");
         tree.addChild("Andrew", Gender.MAN, "Sveta", "Anatoliy");
         return tree;
     }
 
+    private static Command createLoadCommand(FileManager save){
+     return new Command() {
+         @Override
+         public void execute() {
+             tree = initTre();
+             try {
+                 save.writeFile(tree);
+             } catch (IOException e) {
+                 throw new RuntimeException(e);
+             }
+         }
+     };
+    }
+    private  static Command createReadCommand(FileManager save){
+        return new Command() {
+            @Override
+            public void execute() {
+                    try {
+                        tree = save.readFile();
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    } catch (ClassNotFoundException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+        };
+    }
+    private static Command createPrintChildrenCommand() {
+        return new Command() {
+            @Override
+            public void execute() {
+                Scanner scanner = new Scanner(System.in);
+                System.out.println("Введите имя  Sveta , Anatoliy, Lena, Enakentiy, Anastasia, Aleksandr, Alexey");
+                String name = scanner.nextLine();
+                Human result = tree.findHuman(name);
+                System.out.println("Все дети " + result + " : ");
+                for (Human hum : result.getChildren()) {
+                    System.out.println(hum.getName());
+                }
+            }
+        };
+    }
 }
