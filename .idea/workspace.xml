@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e08da56-2d1a-4a7f-99e3-a2e3b395d8a0" name="Changes" comment="переименования">
+    <list default="true" id="2e08da56-2d1a-4a7f-99e3-a2e3b395d8a0" name="Changes" comment="Iterable">
+      <change afterPath="$PROJECT_DIR$/src/FamilyIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FamilyIterator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeImple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NewTreeParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NewTreeParam.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +15,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -104,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678177908870</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Iterable">
+      <created>1678179611800</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678179611800</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,6 +134,7 @@
     <MESSAGE value="Iterator" />
     <MESSAGE value="Add idea to gitignore" />
     <MESSAGE value="переименования" />
-    <option name="LAST_COMMIT_MESSAGE" value="переименования" />
+    <MESSAGE value="Iterable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iterable" />
   </component>
 </project>
