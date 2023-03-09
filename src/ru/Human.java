@@ -1,3 +1,5 @@
+package ru;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -59,7 +61,7 @@ public class Human implements Serializable {
 
     @Override
     public String toString() {
-        return "Human{" +
+        return "ru.Human{" +
                 "name='" + name + '\'' +
                 '}';
     }

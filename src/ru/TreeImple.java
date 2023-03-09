@@ -1,21 +1,35 @@
+package ru;
+
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
+import java.util.Spliterator;
+import java.util.function.Consumer;
 
 public class TreeImple implements Tree, Serializable, Iterable<Human> {
-    private NewTreeParam<Human> humanTree;
+    private CreateTree<Human> humanTree;
 
     public TreeImple(String name, Gender gender) {
         Human me = new Human("Alexey", Gender.MAN);
-        humanTree = new NewTreeParam<>(me);
+        humanTree = new CreateTree<>(me);
     }
+
     @Override
-    public void addChild(String name, Gender childGender, String motherName, String fatherName) {
+    public Human addChild(String name, Gender childGender, String motherName, String fatherName) {
         Human child = new Human(name, childGender);
         Human mother = findHuman(motherName);
         Human father = findHuman(fatherName);
         relations(child, mother, father);
         humanTree.addChild(child);
 
+        return child;
+    }
+
+    @Override
+    public Human addChild() {
+
+        return null;
     }
 
     @Override
@@ -40,6 +54,21 @@ public class TreeImple implements Tree, Serializable, Iterable<Human> {
         return findParents(name, root);
     }
 
+    @Override
+    public List<Human> aboutPeople(Human human) {
+        ArrayList<Human> list = new ArrayList<>();
+        System.out.println("Вы искали:");
+        if (human.getMom() != null) {
+            list.add(human.getMom());
+        }
+        if (human.getDad() != null) {
+            list.add(human.getDad());
+        }
+        list.addAll(human.getChildren());
+
+        return list;
+    }
+
     private static Human findParents(String name, Human target) {
         if (target.getName().equals(name)) {
             return target;
@@ -62,5 +91,15 @@ public class TreeImple implements Tree, Serializable, Iterable<Human> {
 
     public Iterator<Human> iterator() {
         return humanTree.iterator();
+    }
+
+    @Override
+    public void forEach(Consumer<? super Human> action) {
+        Iterable.super.forEach(action);
+    }
+
+    @Override
+    public Spliterator<Human> spliterator() {
+        return Iterable.super.spliterator();
     }
 }

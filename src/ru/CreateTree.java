@@ -1,14 +1,15 @@
+package ru;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.function.Consumer;
 
-public class NewTreeParam<T> implements Serializable {
+public class CreateTree<T> implements Serializable {
     private T root;
     private ArrayList<T> familyList = new ArrayList<>();
 
 
-    public NewTreeParam(T root) {
+    public CreateTree(T root) {
         this.root = root;
         familyList.add(root);
 

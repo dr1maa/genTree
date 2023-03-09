@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e08da56-2d1a-4a7f-99e3-a2e3b395d8a0" name="Changes" comment="вынес в отдельный файл класс">
+    <list default="true" id="2e08da56-2d1a-4a7f-99e3-a2e3b395d8a0" name="Changes" comment="Класс общения с пользователем">
+      <change afterPath="$PROJECT_DIR$/src/ru/mvp/ConsoleUi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/mvp/Presenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/mvp/View.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConsoleUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleUi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeImple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConsoleUi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FamilyIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/FamilyIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Gender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NewTreeParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/CreateTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Save.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TreeImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/TreeImple.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +58,32 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="mvp" />
+      <recent name="ru" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.Main" />
+      <module name="genTree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -119,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678180615996</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Класс общения с пользователем">
+      <created>1678182551860</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678182551860</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +188,18 @@
     <MESSAGE value="переименования" />
     <MESSAGE value="Iterable" />
     <MESSAGE value="вынес в отдельный файл класс" />
-    <option name="LAST_COMMIT_MESSAGE" value="вынес в отдельный файл класс" />
+    <MESSAGE value="Класс общения с пользователем" />
+    <option name="LAST_COMMIT_MESSAGE" value="Класс общения с пользователем" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ru/mvp/Presenter.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

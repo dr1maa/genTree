@@ -1,3 +1,5 @@
+package ru;
+
 import java.io.IOException;
 
 public interface Save  {
