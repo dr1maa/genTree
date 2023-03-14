@@ -1,5 +1,7 @@
 package ru.mvp;
 import ru.Command;
+import ru.Human;
+
 import java.util.Scanner;
 public class ConsoleUi implements View {
 
@@ -9,6 +11,7 @@ public class ConsoleUi implements View {
     private Command printAllPeople;
     private Command addHuman;
     private Command aboutHuman;
+
 
     @Override
     public void update() {
@@ -61,6 +64,28 @@ public class ConsoleUi implements View {
     }
     public void setAboutHuman(Command aboutHuman){
         this.aboutHuman = aboutHuman;
+    }
+
+    @Override
+    public void printEror() {
+        System.out.println("Дерево не загружено");
+    }
+
+    @Override
+    public String inputName() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите имя  Sveta , Anatoliy, Lena, Enakentiy, Anastasia, Aleksandr, Alexey");
+        String name = scanner.nextLine();
+        return name;
+    }
+
+    @Override
+    public void printAllChild(Human result) {
+        System.out.println("Все дети " + result + " : ");
+        for (Human hum : result.getChildren()) {
+            System.out.println(hum.getName());
+        }
+
     }
 
 

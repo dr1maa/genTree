@@ -15,21 +15,9 @@ public class CreateTree<T> implements Serializable {
 
     }
 
-    public void addChild(T child) {
-        familyList.add(child);
+    public void addHumanToFamily(T human) {
+        familyList.add(human);
     }
-
-    public void addParants(T mother, T father) {
-        familyList.add(mother);
-        familyList.add(father);
-
-    }
-
-
-    public T findPeople(String name) {
-        return null;
-    }
-
 
     public T getRoot() {
         return root;

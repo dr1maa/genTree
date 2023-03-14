@@ -28,20 +28,12 @@ public class Presenter {
         }
     }
 
-    private TreeImple initTre() {
-        TreeImple tree = new TreeImple("Alexey", Gender.MAN);
-        tree.addParents("Alexey", "Sveta", "Anatoliy");
-        tree.addParents("Sveta", "Lena", "Enakentiy");
-        tree.addParents("Anatoliy", "Anastasia", "Aleksandr");
-        tree.addChild("Andrew", Gender.MAN, "Sveta", "Anatoliy");
-        return tree;
-    }
 
     private Command createLoadCommand(FileManager save) {
         return new Command() {
             @Override
             public void execute() {
-                tree = initTre();
+                tree = FamilyFactoryInit.initTree();
                 try {
                     save.writeFile(tree);
                 } catch (IOException e) {
@@ -71,17 +63,15 @@ public class Presenter {
             @Override
             public void execute() {
                 if (tree == null) {
-                    System.out.println("Дерево не загружено");
+                    view.printEror();
+
                     return;
                 }
-                Scanner scanner = new Scanner(System.in);
-                System.out.println("Введите имя  Sveta , Anatoliy, Lena, Enakentiy, Anastasia, Aleksandr, Alexey");
-                String name = scanner.nextLine();
+
+                String name = view.inputName();
                 Human result = tree.findHuman(name);
-                System.out.println("Все дети " + result + " : ");
-                for (Human hum : result.getChildren()) {
-                    System.out.println(hum.getName());
-                }
+
+                view.printAllChild(result);
             }
         };
     }

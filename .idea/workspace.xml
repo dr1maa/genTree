@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e08da56-2d1a-4a7f-99e3-a2e3b395d8a0" name="Changes" comment="Класс общения с пользователем">
-      <change afterPath="$PROJECT_DIR$/src/ru/mvp/ConsoleUi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/mvp/Presenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/mvp/View.java" afterDir="false" />
+    <list default="true" id="2e08da56-2d1a-4a7f-99e3-a2e3b395d8a0" name="Changes" comment="проверка новой ветки">
+      <change afterPath="$PROJECT_DIR$/src/ru/FamilyFactoryInit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConsoleUi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FamilyIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/FamilyIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NewTreeParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/CreateTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Save.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Tree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/TreeImple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/CreateTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/CreateTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/TreeImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/TreeImple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/mvp/ConsoleUi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/mvp/ConsoleUi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/mvp/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/mvp/Presenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/mvp/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/mvp/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +27,16 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="version_1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2M2elRRwDZ6g1oWr34SofUejeAI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -51,13 +46,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="mvp" />
@@ -80,6 +76,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -171,7 +169,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="pr" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -190,16 +200,5 @@
     <MESSAGE value="вынес в отдельный файл класс" />
     <MESSAGE value="Класс общения с пользователем" />
     <option name="LAST_COMMIT_MESSAGE" value="Класс общения с пользователем" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ru/mvp/Presenter.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

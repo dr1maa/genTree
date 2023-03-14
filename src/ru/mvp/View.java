@@ -1,6 +1,7 @@
 package ru.mvp;
 
 import ru.Command;
+import ru.Human;
 
 public interface View {
     void update();
@@ -15,5 +16,8 @@ public interface View {
 
     void setAddHuman(Command command);
     void setAboutHuman(Command command);
+    void  printEror();
+    String inputName();
+    void printAllChild(Human human);
 
 }

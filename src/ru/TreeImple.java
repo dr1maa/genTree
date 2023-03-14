@@ -21,7 +21,7 @@ public class TreeImple implements Tree, Serializable, Iterable<Human> {
         Human mother = findHuman(motherName);
         Human father = findHuman(fatherName);
         relations(child, mother, father);
-        humanTree.addChild(child);
+        humanTree.addHumanToFamily(child);
 
         return child;
     }
@@ -38,7 +38,8 @@ public class TreeImple implements Tree, Serializable, Iterable<Human> {
         Human mother = new Human(motherName, Gender.WOMAN);
         Human father = new Human(fatherName, Gender.MAN);
         relations(people, mother, father);
-        humanTree.addParants(mother, father);
+        humanTree.addHumanToFamily(mother);
+        humanTree.addHumanToFamily(father);
     }
 
     private void relations(Human child, Human mother, Human father) {
