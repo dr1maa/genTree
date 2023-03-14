@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e08da56-2d1a-4a7f-99e3-a2e3b395d8a0" name="Changes" comment="Класс общения с пользователем">
-      <change afterPath="$PROJECT_DIR$/src/ru/mvp/ConsoleUi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/mvp/Presenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/mvp/View.java" afterDir="false" />
+    <list default="true" id="2e08da56-2d1a-4a7f-99e3-a2e3b395d8a0" name="Changes" comment="Добавлена функция выводить родственников человека и добавлять нового человека">
+      <change afterPath="$PROJECT_DIR$/src/ru/Family.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConsoleUi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FamilyIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/FamilyIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Gender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Human.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NewTreeParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/CreateTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Save.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/Tree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/TreeImple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/CreateTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/FamilyTreeManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/TreeImple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/TreeImple.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="pr" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -163,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678182551860</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Добавлена функция выводить родственников человека и добавлять нового человека">
+      <created>1678367273896</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678367273896</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,7 +167,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="proba" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -189,7 +197,8 @@
     <MESSAGE value="Iterable" />
     <MESSAGE value="вынес в отдельный файл класс" />
     <MESSAGE value="Класс общения с пользователем" />
-    <option name="LAST_COMMIT_MESSAGE" value="Класс общения с пользователем" />
+    <MESSAGE value="Добавлена функция выводить родственников человека и добавлять нового человека" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена функция выводить родственников человека и добавлять нового человека" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

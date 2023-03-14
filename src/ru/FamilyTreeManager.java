@@ -4,12 +4,12 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class CreateTree<T> implements Serializable {
+public class FamilyTreeManager<T> implements Serializable {
     private T root;
     private ArrayList<T> familyList = new ArrayList<>();
 
 
-    public CreateTree(T root) {
+    public FamilyTreeManager(T root) {1123
         this.root = root;
         familyList.add(root);
 
@@ -24,6 +24,7 @@ public class CreateTree<T> implements Serializable {
         familyList.add(father);
 
     }
+
 
 
     public T findPeople(String name) {

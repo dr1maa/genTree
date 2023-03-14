@@ -8,11 +8,12 @@ import java.util.Spliterator;
 import java.util.function.Consumer;
 
 public class TreeImple implements Tree, Serializable, Iterable<Human> {
-    private CreateTree<Human> humanTree;
+    private FamilyTreeManager<Human> humanTree;
+
 
     public TreeImple(String name, Gender gender) {
         Human me = new Human("Alexey", Gender.MAN);
-        humanTree = new CreateTree<>(me);
+        humanTree = new FamilyTreeManager<>(me);
     }
 
     @Override
